@@ -123,6 +123,11 @@
                 "description": "exceeds maximum label length (63)",
                 "data": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijkl.com",
                 "valid": false
+            },
+            {
+                "description": "dotted-decimal IP addresses are not valid hostnames",
+                "data": "192.168.0.1",
+                "valid": false
             }
         ]
     },

@@ -139,23 +139,18 @@
                 "valid": false
             },
             {
-                "description": "dotted-decimal IP addresses are not valid hostnames",
-                "data": "192.168.0.1",
+                "description": "hostname with top level label completely numeric is invalid",
+                "data": "example.123",
                 "valid": false
             },
             {
-                "description": "numeric labels are allowed in hostnames",
-                "data": "123.example.com",
+                "description": "hostname with top level label partially numeric is valid",
+                "data": "example.12a",
                 "valid": true
             },
             {
-                "description": "ipv4-like but last label not purely numeric",
-                "data": "192.168.0.1a",
-                "valid": true
-            },
-            {
-                "description": "ipv4-like but first label not purely numeric",
-                "data": "a192.168.0.1",
+                "description": "hostname with numeric labels except the top level label is valid",
+                "data": "123.456.789.example",
                 "valid": true
             }
         ]
